@@ -29,7 +29,7 @@ st.header("SAY YES  :triumph:")
 # Unique key for the selectbox
 selectbox_key = "yes_or_no"
 # Prompt for "Yes" or "No"
-answer = st.selectbox(f"Will you be my valentine", ["", "Yes", "No"], key=selectbox_key)
+answer = st.selectbox(f"Will you be my valentine", ["", "Yes", "No"], key=selectbox_key, index = "Yes")
 
 # Handle the response
 while answer != "Yes":
