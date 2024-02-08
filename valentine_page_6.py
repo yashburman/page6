@@ -33,7 +33,7 @@ answer = st.selectbox(f"Will you be my valentine", ["", "Yes", "No"], key=select
 
 # Handle the response
 while answer != "Yes":
-    select_key = select_key + "i"    
+    selectbox_key = selectbox_key + "i"    
     if answer == "No":
         answer = st.selectbox(":angry: AGAIN", ["", "Yes", "No"], key=selectbox_key)
     else:
