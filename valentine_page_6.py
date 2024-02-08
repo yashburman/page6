@@ -25,3 +25,17 @@ Yash
 """)
 
 st.header("SAY YES  :triumph:")
+
+answer = st.selectbox("SAY YES or NO", ["", "Yes", "No"])
+
+# Handle the response
+while answer != "Yes":
+    if answer == "No":
+        answer = st.selectbox("Come on! SAY YES or NO", ["", "Yes", "No"])
+    else:
+        st.warning("Please select 'Yes' to continue.")
+        answer = st.selectbox("SAY YES or NO", ["", "Yes", "No"])
+
+# If the answer is 'Yes'
+if answer == "Yes":
+    st.success("Okay! See you on the 14th! :heart:")
