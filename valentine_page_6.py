@@ -33,7 +33,6 @@ while True:
         answer = st.selectbox(f"Will you be my valentine?", ["Yes", "No"], key=selectbox_key)
         if answer == "Yes":
                 st.success("Okay! See you on the 14th! :heart:")
-                return 
         else:
                 st.write("Wrong answer :triumph:")
                 
