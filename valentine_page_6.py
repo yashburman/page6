@@ -29,17 +29,17 @@ st.header("SAY YES  :triumph:")
 # Unique key for the selectbox
 selectbox_key = "yes_or_no"
 # Prompt for "Yes" or "No"
-answer = st.selectbox(f"SAY YES or NO", ["", "Yes", "No"], key=selectbox_key)
+answer = st.selectbox(f"Will you be my valentine", ["", "Yes", "No"], key=selectbox_key)
 
 # Handle the response
 while answer != "Yes":
-        
-    if answer == "No":
-        answer = st.selectbox("Come on! SAY YES or NO", ["", "Yes", "No"], key=selectbox_key)
-    else:
-        st.warning("Please select 'Yes' to continue.")
-        answer = st.selectbox(f"SAY YES or NO", ["", "Yes", "No"], key=selectbox_key)
     select_key = select_key + "i"    
+    if answer == "No":
+        answer = st.selectbox(":angry: AGAIN", ["", "Yes", "No"], key=selectbox_key)
+    else:
+        st.warning("select 'Yes' to continue.")
+        answer = st.selectbox(f"SAY YES or NO", ["", "Yes", "No"], key=selectbox_key)
+        
 
 # If the answer is 'Yes'
 if answer == "Yes":
