@@ -34,6 +34,7 @@ while True:
         selectbox_key = selectbox_key + "i"
         if answer == "Yes":
                 st.success("Okay! See you on the 14th! :heart:")
+                break
         else:
                 st.write("Wrong answer :triumph:")
                 
