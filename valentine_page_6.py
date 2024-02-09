@@ -29,7 +29,7 @@ st.header("SAY YES  :triumph:")
 # Unique key for the selectbox
 selectbox_key = "yes_or_no"
 # Prompt for "Yes" or "No"
-answer = st.selectbox(f"Will you be my valentine", ["", "Yes", "No"], key=selectbox_key, index = 1)  
+answer = st.selectbox(f"Will you be my valentine", ["", "Yes", "No"], key=selectbox_key, index = None)  
 if answer == "No":
     st.success("WRONG ANSWER :triumph: I'll see you on 14th (in a saree :joy:)")
 if answer == "Yes":
