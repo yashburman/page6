@@ -33,7 +33,7 @@ answer = st.selectbox(f"Will you be my valentine", ["", "Yes", "No"], key=select
 if answer == "No":
     st.success("WRONG ANSWER :triumph: I'll see you on 14th (in a saree :joy:)")
 if answer == "Yes":
-    st.success("Okay! See you on the 14th! :heart: :joy:")
+    st.success("Okay! See you on the 14th! :heart: :smile:")
 if answer == '':
-    st.success("I'll take that as a yes :triumph:")
+    st.success("I'll take that as a yes :kissing_heart:")
                 
