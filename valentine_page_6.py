@@ -31,7 +31,7 @@ selectbox_key = "yes_or_no"
 # Prompt for "Yes" or "No"
 answer = st.selectbox(f"Will you be my valentine", ["", "Yes", "No"], key=selectbox_key, index = None)  
 if answer == "No":
-    st.success("WRONG ANSWER :triumph: I'll see you on 14th (in a saree :joy:)")
+    st.success("WRONG ANSWER :triumph: I'll see you on 14th (in a saree :kissing_heart:)")
 if answer == "Yes":
     st.success("Okay! See you on the 14th! :heart: :smile:")
 if answer == '':
