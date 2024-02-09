@@ -39,9 +39,5 @@ while answer != "Yes":
     else:
         st.warning("select 'Yes' to continue.")
         #answer = st.selectbox(f"SAY YES or NO", ["", "Yes", "No"], key=selectbox_key)
-        
-
-# If the answer is 'Yes'
-if answer == "Yes":
-    st.success("Okay! See you on the 14th! :heart:")
+st.success("Okay! See you on the 14th! :heart:")
                 
